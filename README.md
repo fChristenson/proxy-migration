@@ -1,11 +1,11 @@
-# proxy-migration
-
+# Migrating a monolith to Microservices
 
 ## What we will cover
 
 * What is a legacy systems?
 * What makes them hard to maintain?
 * How can we migrate a legacy system?
+* When is it time to split a monolith?
 
 ## Notes
 
@@ -15,11 +15,7 @@ with what is currently considered good practice.
 This word is sometimes overused and sometimes it just means "code I did not write".
 
 However sometimes a codebase has grown so messy that it is actually hard to maintain
-or even worse, it may be so bad that it is slowing down not just the development process
-but the user experience.
-
-Other things can factor in as well, perhaps you started with a small application and now
-the system has grown too big for your current needs and you need to switch languages.
+or even worse, it may be so bad that it is slowing down not just the development process but the user experience.
 
 When this happens we usually have three options:
 
@@ -46,5 +42,7 @@ the easier it is to maintain.
 
 Having multiple services is however not for free, it takes a lot more maintenance
 to manage multiple services than it takes to manage one monolith but if you have 
-a project that has grown to the size where this makes sense the trade is usualy 
+a project that has grown to the size where this makes sense the trade is usually 
 worth it.
+
+Remember that it is just a matter of time before the system is so big that it is hard to have multiple teams of people working on the same code and that is when you should start to think about migrating.
